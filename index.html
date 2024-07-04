@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Finance Department</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <div class="header">
+        <img src="pimslogo.png" alt="PESHAWAR INSTITUTE OF MEDICAL SCIENCES" class="logo">
+        <div class="header-text">PESHAWAR INSTITUTE OF MEDICAL SCIENCES</div>
+        <div class="pims">Hospital Finance Department</div>
+    </div>
+    <div class="container">
+        <form id="patientForm">
+            <h2>Patient Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <h2>Financial Information</h2>
+            <label for="treatmentCost">Treatment Cost:</label>
+            <input type="number" id="treatmentCost" name="treatmentCost" required>
+            <label for="insurance">Insurance:</label>
+            <input type="text" id="insurance" name="insurance">
+            <label for="paymentStatus">Payment Status:</label>
+            <select id="paymentStatus" name="paymentStatus" required>
+                <option value="Paid">Paid</option>
+                <option value="Pending">Pending</option>
+            </select>
+            <label for="stayDuration">Hospital Stay Duration (days):</label>
+            <input type="number" id="stayDuration" name="stayDuration" required>
+            <label for="treatmentType">Type of Treatment:</label>
+            <input type="text" id="treatmentType" name="treatmentType" required>
+            <label for="discount">Discount (%):</label>
+            <input type="number" id="discount" name="discount">
+            <label for="paymentMode">Mode of Payment:</label>
+            <select id="paymentMode" name="paymentMode" required>
+                <option value="Cash">Cash</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="Online Transfer">Online Transfer</option>
+                <option value="Insurance">Insurance</option>
+            </select>
+            <button type="submit">Save</button>
+        </form>
+        <h2>Stored Patient Data</h2>
+        <div id="patientData"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.21/jspdf.plugin.autotable.min.js"></script>
+    <script src="index2.mjs"></script>
+</body>
+</html>

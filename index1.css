@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #427244;
+    color: white;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.header-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7f5c27;
+}
+
+#patientData {
+    margin-top: 20px;
+}
+.pims{ 
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 70px;
+
+}
